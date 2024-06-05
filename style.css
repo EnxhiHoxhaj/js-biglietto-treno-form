@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*DEBUG*/
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #738347;
+    padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container > div, #titolo {
+    width: 80%;
+    color: #866c5a;
+}
+
+.container {
+    width: 40%;
+    background-color: #f5efe3;
+    margin: auto;
+    padding: 20px 0;
+    border-radius: 25px;
+    border: solid #866c5a 1px;
+}
+
+#titolo {
+    margin: 20px auto 40px;
+    font-size: 25px;
+}
+
+.container div {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    border: solid #866c5a 0.5px;
+}
