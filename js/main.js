@@ -18,7 +18,7 @@ const rate = Number( 0.21 );
 
 console.log(nomeCognome);
 
-console.log (parseInt (distanzaKm));
+console.log (distanzaKm.value);
 
 console.log(etaUser);
 
@@ -28,10 +28,17 @@ console.log(costoBiglietto);
 
 //calcolo del prezzo del biglietto
 
-let price = parseInt(rate * distanzaKm);
+let price = parseInt(rate * distanzaKm.value);
 
 console.log("The cost of your ticket is " + price + "€");
 
+var sale20 = price - ( price * .2);
 
+console.log( "You have a 20% discount, so the cost of your ticket is: " + sale20 + "€");
 
+var sale40 = price - ( price * .4);
+
+console.log( "You have a 40% discount, so the cost of your ticket is: " + sale40 + "€");
+
+// click del bottone
 
