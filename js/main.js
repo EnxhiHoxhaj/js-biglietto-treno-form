@@ -1,62 +1,32 @@
-// CALCOLO DEL PREZZO DEL BIGLIETTO DEL TRENO
+// CALCOLO DEL PREZZO DEL BIGLIETTO DEL TRENO E GENERAZIONE BIGLIETTO 
 
-// IMPOSTAZIONE DEL TITOLO INTRODUTTIVO
+//selezione dei tre input, dei bottoni e del costo del biglietto
 
-let NameSurname = prompt ("What's Your Name and surname?");
+const nomeCognome = document.querySelector("#name-surname");
 
-document.getElementById ("name-surname").innerHTML = ( "I'am " + NameSurname);
- 
-let intro = "Welcome to Boolean.ticket the automatic ticket price calculator!!";
+const distanzaKm = document.querySelector("#km");
 
-document.getElementById ("titolo").innerHTML = intro;
+const etaUser = document.querySelector("#years");
 
-//chiedere l'età dell'utente
+const generaTicket = document.querySelector("#genera")
 
-let finale;
+const costoBiglietto = document.querySelector("#ticket-cost");
 
-let anniUser = parseInt(prompt("How old are you?"));
+//log in consol dei tre input, dei bottoni e del costo del biglietto
 
-console.log("How old are you?: I am " + anniUser + " years old" );
 
-let years = "How old are you?: I am " + anniUser + " years old";
+console.log(nomeCognome);
 
-document.getElementById("years").innerHTML = years;
+console.log(distanzaKm);
 
-//chiedere la distanza da percorrere con il treno
-let distance = parseInt(prompt("How many km will you travel?:"));
+console.log(etaUser);
 
-console.log("How many km will you travel?: My journey will be " + distance + " km long");
+console.log(generaTicket);
 
-let journey = "How many km will you travel?: My journey will be " + distance + " km long";
+console.log(costoBiglietto);
 
-document.getElementById("km").innerHTML = journey;
 
-//calcolare il prezzo del biglietto in base ai km da percorrere
 
-const rate = Number( 0.21 );
 
-let price = parseInt(rate * distance);
 
-console.log("The cost of your ticket is " + price + "€");
 
-//applicare lo sconto in base alla fascia d'età
-
-var sale20 = price - ( price * .2);
-
-console.log( "You have a 20% discount, so the cost of your ticket is: " + sale20 + "€");
-
-var sale40 = price - ( price * .4);
-
-console.log( "You have a 40% discount, so the cost of your ticket is: " + sale40 + "€");
-
-//prezzo finale del biglietto
-
-if (anniUser <= 17) {
-    finale = "You have a 20% discount, so the cost of your ticket is: " + sale20 + " €";
-} else if(anniUser >= 65) {
-    finale = "You have a 40% discount, so the cost of your ticket is: " + sale40 + " €";
-} else {
-    finale = "The cost of your ticket is " + price + " €";
-}
-
-document.getElementById("ticket-cost").innerHTML = finale;
