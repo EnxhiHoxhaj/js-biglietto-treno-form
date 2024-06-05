@@ -12,8 +12,9 @@ const generaTicket = document.querySelector("#genera")
 
 const costoBiglietto = document.querySelector("#ticket-cost");
 
-//log in consol dei tre input, dei bottoni e del costo del biglietto
+const rate = Number( 0.21 );
 
+//log in consol dei tre input, dei bottoni e del costo del biglietto
 
 console.log(nomeCognome);
 
@@ -25,7 +26,11 @@ console.log(generaTicket);
 
 console.log(costoBiglietto);
 
+//calcolo del prezzo del biglietto
 
+let price = parseInt(rate * distanzaKm);
+
+console.log("The cost of your ticket is " + price + "€");
 
 
 
