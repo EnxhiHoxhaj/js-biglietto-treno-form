@@ -18,7 +18,7 @@ const rate = Number( 0.21 );
 
 console.log(nomeCognome);
 
-console.log(distanzaKm);
+console.log (parseInt (distanzaKm));
 
 console.log(etaUser);
 
