@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>train ticket</title>
+    <title>train ticket form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <div class="container">
-            <h3 id="titolo"></h3>
-            <div id="name-surname"></div>
-            <div id="years"></div>
-            <div id="km"></div>
-            <div id="ticket-cost"></div> 
-        </div>
+        <h3 id="titolo"></h3>
+        <form class="container">
+            <div class="dati">
+                <label for="name-surname">Nome Cognome</label><br>
+                <input type="text" id="name-surname" name="name-surname" class="ins-dati"></input>
+            </div class="dati">
+            <div>
+                <label for="distanza">Km da percorrere</label><br>
+                <input type="text" class="ins-dati" id="km" name="distanza"></div>
+            </div>
+            <div class="dati">
+                <label for="eta">seleziona la tua fascia d'etè</label><br>
+                <select name="eta" id="years" class="ins-dati">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over-65">Over 65</option>
+                </select>
+            </div>
+            <div>
+                <button id="genera">Genera</button>
+                <button id="annulla">Annulla</button>
+            </div>
+
+            <div>
+                <label for="ticket-cost"></label>
+                <div class="dati" id ="ticket-cost" name="ticket-cost"></div> 
+            </div>
+        </form>
     </main>
     <script type="text/javascript" src="js/main.js" ></script>
 </body>
